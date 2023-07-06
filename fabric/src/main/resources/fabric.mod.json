@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "warehouse",
+  "version": "${version}",
+  "name": "Warehouse",
+  "description": "Low Tech Mass Item Storage inspired by Ancient Warfare 2's Warehouse System",
+  "authors": [
+    "TechTastic"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT License",
+  "icon": "assets/warehouse/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.techtastic.warehouse.fabric.WarehouseModFabric"
+    ],
+    "client": [
+      "io.github.techtastic.warehouse.fabric.WarehouseModClientFabric"
+    ]
+  },
+  "mixins": [
+    "warehouse.mixins.json",
+    "warehouse-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.11.91"
+  }
+}

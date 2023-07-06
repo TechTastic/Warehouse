@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+#issueTrackerURL = ""
+license = "MIT Lisence"
+
+[[mods]]
+modId = "warehouse"
+version = "${version}"
+displayName = "Warehouse"
+authors = "TechTastic"
+description = '''
+Low Tech Mass Item Storage inspired by Ancient Warfare 2's Warehouse System
+'''
+#logoFile = ""
+
+[[dependencies.warehouse]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.warehouse]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.warehouse]]
+modId = "architectury"
+mandatory = true
+versionRange = "[4.11.91,)"
+ordering = "AFTER"
+side = "BOTH"

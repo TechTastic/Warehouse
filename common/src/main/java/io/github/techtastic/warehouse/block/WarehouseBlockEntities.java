@@ -16,14 +16,14 @@ public class WarehouseBlockEntities {
                     BlockEntityType.Builder.of(SimpleStorageBlockEntity::new,
                             WarehouseBlocks.SMALL_STORAGE_BLOCK.get(),
                             WarehouseBlocks.MEDIUM_STORAGE_BLOCK.get(),
-                            WarehouseBlocks.LARGE_STORAGE_BLOCK.get()
-                    ).build(null));
+                            WarehouseBlocks.LARGE_STORAGE_BLOCK.get())
+                            .build(null));
 
     public static final RegistrySupplier<BlockEntityType<WarehouseControllerBlockEntity>> WAREHOUSE_CONTROLLER_BLOCK_ENTITY =
             BLOCK_ENTITIES.register("warehouse_controller", () ->
                     BlockEntityType.Builder.of(WarehouseControllerBlockEntity::new,
-                            WarehouseBlocks.WAREHOUSE_CONTROLLER.get()
-                    ).build(null));
+                            WarehouseBlocks.WAREHOUSE_CONTROLLER.get())
+                            .build(null));
 
     public static void register() {
         BLOCK_ENTITIES.register();

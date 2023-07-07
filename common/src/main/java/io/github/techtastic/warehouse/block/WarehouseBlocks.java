@@ -32,7 +32,7 @@ public class WarehouseBlocks {
             BLOCKS.register("large_storage_block", () ->
                     new SimpleStorageBlock(BlockBehaviour.Properties.copy(Blocks.CHEST), 64));
     public static RegistrySupplier<Block> WAREHOUSE_CONTROLLER =
-            BLOCKS.register("wareohuse_controller", () ->
+            BLOCKS.register("warehouse_controller", () ->
                     new WarehouseControllerBlock(BlockBehaviour.Properties.copy(Blocks.CHEST)));
 
     public static void register() {

@@ -27,10 +27,12 @@ public class SimpleStorageScreen extends AbstractContainerScreen<SimpleStorageMe
 
         this.blit(poseStack, x, y, 0, 0, imageWidth, imageHeight);
 
-        if (!menu.isLastPage())
-            blit(poseStack, x + 173, y + 41, 176, 200, 24, 27);
-        if (!menu.isFirstPage())
-            blit(poseStack, x + 173, y + 14, 176, 0, 24, 27);
+        if (menu.hasMultiplePages()) {
+            if (!menu.isLastPage())
+                blit(poseStack, x + 173, y + 41, 176, 200, 24, 27);
+            if (!menu.isFirstPage())
+                blit(poseStack, x + 173, y + 14, 176, 0, 24, 27);
+        }
     }
 
     @Override

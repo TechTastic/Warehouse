@@ -89,11 +89,15 @@ public class SimpleStorageMenu extends AbstractContainerMenu {
         }
     }
 
+    public boolean hasMultiplePages() {
+        return this.data.get(0) > 27;
+    }
+
     public boolean isFirstPage() {
-        return this.data.get(1) == 0 && this.data.get(2) > 1;
+        return this.data.get(1) == 0;
     }
 
     public boolean isLastPage() {
-        return this.data.get(1) == this.data.get(2) - 1 && this.data.get(2) > 1;
+        return this.data.get(1) == this.data.get(2) - 1;
     }
 }

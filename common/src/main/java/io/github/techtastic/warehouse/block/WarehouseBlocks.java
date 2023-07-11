@@ -24,13 +24,13 @@ public class WarehouseBlocks {
 
     public static RegistrySupplier<Block> SMALL_STORAGE_BLOCK =
             BLOCKS.register("small_storage_block", () ->
-                    new SimpleStorageBlock(BlockBehaviour.Properties.copy(Blocks.CHEST), 16));
+                    new SimpleStorageBlock(BlockBehaviour.Properties.copy(Blocks.CHEST), 27));
     public static RegistrySupplier<Block> MEDIUM_STORAGE_BLOCK =
             BLOCKS.register("medium_storage_block", () ->
-                    new SimpleStorageBlock(BlockBehaviour.Properties.copy(Blocks.CHEST), 32));
+                    new SimpleStorageBlock(BlockBehaviour.Properties.copy(Blocks.CHEST), 54));
     public static RegistrySupplier<Block> LARGE_STORAGE_BLOCK =
             BLOCKS.register("large_storage_block", () ->
-                    new SimpleStorageBlock(BlockBehaviour.Properties.copy(Blocks.CHEST), 64));
+                    new SimpleStorageBlock(BlockBehaviour.Properties.copy(Blocks.CHEST), 81));
     public static RegistrySupplier<Block> WAREHOUSE_CONTROLLER =
             BLOCKS.register("warehouse_controller", () ->
                     new WarehouseControllerBlock(BlockBehaviour.Properties.copy(Blocks.CHEST)));
